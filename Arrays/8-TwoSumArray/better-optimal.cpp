@@ -3,7 +3,8 @@ using namespace std;
 
 // This is optimal if array indices also asked
 // if Two sum is exists or not alone asked you can for 2-pointer approach
-// of sorted array placing indices at start and end
+// of sorted array initializing indices start at beginning and end at the end of
+// vector (if sum of two values > target reduce end, else increase the start)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
